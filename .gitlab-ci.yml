@@ -6,6 +6,7 @@ stages:
   - deploy
   - deployment tests
 
+//Add cache to make program run faster
 cache:
   key: ${CI_COMMIT_REF_SLUG}
   paths:
