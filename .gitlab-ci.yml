@@ -46,7 +46,7 @@ deploy staging:
     url: http://lptest1-staging.surge.sh
   script:
     - npm install --global surge
-    - surge --project ./public --domain instazone-staging.surge.sh
+    - surge --project ./public --domain lptest1-staging.surge.sh
 
 deploy production: 
   stage: deploy production
@@ -55,7 +55,7 @@ deploy production:
     url: http://lptest1.surge.sh
   script:
     - npm install --global surge
-    - surge --project ./public --domain instazone.surge.sh
+    - surge --project ./public --domain lptest1.surge.sh
 
 production tests:
   image: alpine
