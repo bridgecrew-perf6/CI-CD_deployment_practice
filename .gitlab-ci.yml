@@ -33,7 +33,7 @@ test artifact:
   stage: test
   script:
     - grep -q "Gatsby" ./public/index.html
-
+//
 test website:
   stage: test
   script:
