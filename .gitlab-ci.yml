@@ -64,7 +64,7 @@ deploy production:
   script:
     - npm install --global surge
     - surge --project ./public --domain $PRODUCTION_DOMAIN
-
+//
 production tests:
   image: alpine
   stage: production tests
