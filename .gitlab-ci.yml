@@ -19,6 +19,9 @@ variables:
 
 build website:
   stage: build
+  only: 
+    - master
+    - merge_requests
   script:
     - echo $CI_COMMIT_SHORT_SHA
     - npm install
