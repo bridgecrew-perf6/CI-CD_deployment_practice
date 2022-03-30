@@ -43,7 +43,7 @@ test website:
     - gatsby serve &
     - sleep 3
     - curl "http://localhost:9000" | tac | tac | grep -q "Gatsby"
-
+//
 deploy review:
   stage: deploy review
   only:
